@@ -7,6 +7,6 @@ data:
   values.yaml: |
      {
       replicaCount: 1, 
-      fullnameOverride: "bop-config-api2"
+      fullnameOverride: "bop-config-api"
       }
 
