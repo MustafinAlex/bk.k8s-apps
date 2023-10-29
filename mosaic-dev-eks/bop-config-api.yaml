@@ -5,6 +5,5 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-     replicaCount: 1
-     fullnameOverride: "Test" 
+     {replicaCount: 2, fullnameOverride: "Test"}
 
