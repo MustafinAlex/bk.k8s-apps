@@ -1,18 +1,9 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
+apiVersion: v1
+kind: ConfigMap
 metadata:
-  name: bop-config-api
-  namespace: application
-spec:
-  interval: 1m
-  chart:
-    spec:
-      chart: application/base/helm-charts
-      version: '4.0.x'
-      sourceRef:
-        kind: GitRepository
-        name: flux-system
-        namespace: flux-system
-      interval: 1m
-#  values:
-#    replicaCount: 1
+    name: bop-config-api-values
+    namespace: application
+data:
+  values.yaml: |
+    {replicaCount: 1}
+
