@@ -5,5 +5,5 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-    {replicaCount: 1}
+    {replicaCount: 2}
 
