@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: bop-config-ui-values
+    name: bop-config-svc-values
     namespace: application
 data:
   values.yaml: |
      {
-      replicaCount: 1, 
-      fullnameOverride: "bop-config-svc"
+      replicaCount: 1
       }
 
