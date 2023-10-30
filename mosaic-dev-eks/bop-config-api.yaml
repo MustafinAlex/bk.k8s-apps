@@ -8,7 +8,7 @@ data:
      {
       replicaCount: 1, 
       fullnameOverride: "bop-config-api",
-      esConfig: {
+      configMap: {
         SALESTAXSERVICE: "net.tcp://"
         }
       }
