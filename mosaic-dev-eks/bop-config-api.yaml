@@ -8,9 +8,12 @@ data:
      {
       replicaCount: 1, 
       fullnameOverride: "bop-config-api",
+      # -- Enable configmap from Helm chart
       configMap: {
         SALESTAXSERVICE: "net.tcp://1",
-        SHARED: "shared"
+        SHARED: "shared",
+        APPLICATION__ENVIRONMENT: "devqa"
         }
+
       }
 
