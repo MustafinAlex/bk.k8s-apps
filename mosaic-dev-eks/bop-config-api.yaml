@@ -5,7 +5,7 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-     {
+    {
       fullnameOverride: "bop-config-api",
 
       # -- Enable configmap from Helm chart
@@ -19,7 +19,17 @@ data:
         minReplicas: 1,
         maxReplicas: 2,
         targetCpuUtilization: 50
-       }
+       },
 
+      Resources: {
+        Limits:{
+          Memory: 128Mi,
+          CPU: 100m
+        },
+        Requests:{
+          Memory: 50Mi,
+          CPU: 50m
+        }
       }
+    }
 
