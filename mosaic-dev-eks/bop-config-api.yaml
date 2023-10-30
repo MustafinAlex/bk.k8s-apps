@@ -7,7 +7,7 @@ data:
   values.yaml: |
      {
       replicaCount: 1, 
-      fullnameOverride: "bop-config-api-2",
+      fullnameOverride: "bop-config-api",
       esConfig: {
         SALESTAXSERVICE: "net.tcp://"
         }
