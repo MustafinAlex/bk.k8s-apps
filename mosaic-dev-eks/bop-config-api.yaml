@@ -18,11 +18,10 @@ data:
         APPLICATION__ENVIRONMENT: "devqa"
         },
 
-      replicaCount: 1, 
       autoscalingPolicy: {
         minReplicas: 2,
         maxReplicas: 3,
-        targetCpuUtilization: "90"
+        targetCpuUtilization: 90
        }
 
       }
