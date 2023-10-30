@@ -19,11 +19,10 @@ data:
         },
 
       autoscalingPolicy: {
-        minReplicas: 1,
-        maxReplicas: 1,
-        targetCpuUtilization: 100
+        minReplicas: "1",
+        maxReplicas: "1",
+        targetCpuUtilization: "100"
        }
-
 
       }
 
