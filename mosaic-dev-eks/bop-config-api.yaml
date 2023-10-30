@@ -21,14 +21,14 @@ data:
         targetCpuUtilization: 50
        },
 
-      Resources: {
-        Limits:{
-          Memory: 128Mi,
-          CPU: 100m
+      resources: {
+        limits: {
+          memory: 128Mi,
+          cpu: 100m
         },
-        Requests:{
-          Memory: 50Mi,
-          CPU: 50m
+        requests: {
+          memory: 50Mi,
+          cpu: 50m
         }
       }
     }
