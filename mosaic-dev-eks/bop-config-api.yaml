@@ -9,7 +9,7 @@ data:
       replicaCount: 1, 
       fullnameOverride: "bop-config-api",
       configMap: {
-        SALESTAXSERVICE: "net.tcp://"
+        SALESTAXSERVICE: "net.tcp://1"
         }
       }
 
