@@ -9,21 +9,21 @@ data:
       image.tag: "1.16.0"
       # -- Enable configmap from Helm chart
 
-      configMap: |
+      configMap: 
         SALESTAXSERVICE: net.tcp://1
         SHARED: shared
         APPLICATION__ENVIRONMENT: devqa
 
-      autoscalingPolicy: |
+      autoscalingPolicy: 
         minReplicas: 1
         maxReplicas: 2
         targetCpuUtilization: 50
 
-      resources: |
-        limits: |
+      resources: 
+        limits: 
           memory: 128Mi
           cpu: 100m
-        requests: |
+        requests: 
           memory: 50Mi
           cpu: 50m
 
