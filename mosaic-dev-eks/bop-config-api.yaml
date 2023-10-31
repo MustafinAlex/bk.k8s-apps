@@ -9,8 +9,8 @@ data:
     image.tag: 1.16.0
 
     autoscalingPolicy:
-      minReplicas: 2
-      maxReplicas: 3
+      minReplicas: 1
+      maxReplicas: 2
       targetCpuUtilization: 50
 
     resources:
