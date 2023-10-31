@@ -4,8 +4,7 @@ metadata:
     name: bop-config-ui-values
     namespace: application
 data:
-  values.yaml: |-
-
+  values.yaml: |
     fullnameOverride: bop-config-ui-2
     image.tag: "1.16.0"
 
