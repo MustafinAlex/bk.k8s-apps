@@ -6,25 +6,25 @@ metadata:
 data:
   values.yaml: |
        
-fullnameOverride: bop-config-api
-image:
-  tag: 1.16.0
+    fullnameOverride: bop-config-api
+    image:
+      tag: 1.16.0
 
-autoscalingPolicy:
-  minReplicas: 2
-  maxReplicas: 3
-  targetCpuUtilization: 50
+    autoscalingPolicy:
+      minReplicas: 2
+      maxReplicas: 3
+      targetCpuUtilization: 50
 
-resources:
-  limits:
-    memory: 128Mi
-    cpu: 100m
-  requests:
-    memory: 50Mi
-    cpu: 50m
+    resources:
+      limits:
+        memory: 128Mi
+        cpu: 100m
+      requests:
+        memory: 50Mi
+        cpu: 50m
  
-# -- Enable configmap from Helm chart
-configMap:
-  SALESTAXSERVICE: 'net.tcp://1'
-  SHARED: shared
-  APPLICATION__ENVIRONMENT: devqa
+    # -- Enable configmap from Helm chart
+    configMap:
+      SALESTAXSERVICE: 'net.tcp://1'
+      SHARED: shared
+      APPLICATION__ENVIRONMENT: devqa
