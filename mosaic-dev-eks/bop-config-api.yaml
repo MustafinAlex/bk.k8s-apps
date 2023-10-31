@@ -5,7 +5,7 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-      fullnameOverride: "bop-config-api",
+      fullnameOverride: "bop-config-api"
       image.tag: "1.16.0"
       # -- Enable configmap from Helm chart
 
