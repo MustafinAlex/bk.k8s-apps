@@ -53,6 +53,6 @@ spec:
  
     # -- Configmap for Service
     configMap:
-      SALESTAXSERVICE: 'net.tcp://1123123123'
+      SALESTAXSERVICE: 'net.tcp://999999999999'
       SHARED: shared
       APPLICATION__ENVIRONMENT: devqa
