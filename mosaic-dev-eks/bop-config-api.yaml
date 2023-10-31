@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: bop-config-api-values2
+    name: bop-config-api-values
     namespace: application
 data:
   values.yaml: |
