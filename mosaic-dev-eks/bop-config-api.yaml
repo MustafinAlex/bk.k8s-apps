@@ -1,14 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: bop-config-api-values
+    name: bop-config-api-values2
     namespace: application
 data:
   values.yaml: |
-       
     fullnameOverride: bop-config-api
-    image:
-      tag: 1.16.0
+    image.tag: 1.16.0
 
     autoscalingPolicy:
       minReplicas: 2
