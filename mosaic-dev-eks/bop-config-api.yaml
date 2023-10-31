@@ -22,6 +22,11 @@ data:
         httpGet:
           path: /
           port: http
+        failureThreshold: 3
+        initialDelaySeconds: 30
+        periodSeconds: 5
+        successThreshold: 1
+        timeoutSeconds: 2
 
     resources:
       limits:
