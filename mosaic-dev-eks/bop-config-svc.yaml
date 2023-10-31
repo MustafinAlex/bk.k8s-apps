@@ -5,7 +5,6 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-  values.yaml: |
      {
       replicaCount: 1
       }
