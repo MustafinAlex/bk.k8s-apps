@@ -5,8 +5,7 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-     {
-      replicaCount: 1, 
-      fullnameOverride: "bop-config-svc"
-      }
+      replicaCount=1
+#      fullnameOverride: "bop-config-svc"
+ 
 
