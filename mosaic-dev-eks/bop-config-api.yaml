@@ -15,17 +15,13 @@ data:
 
     serviceHealth:
       readinessProbe:
-        initialDelaySeconds: 30
-        periodSeconds: 5
-        timeoutSeconds: 1
-        port: 8081
-        healthEndpoint: /admin/health
+        httpGet:
+          path: /
+          port: http
       livenessProbe:
-        initialDelaySeconds: 30 # Must be greater than app startup time
-        periodSeconds: 5
-        timeoutSeconds: 1
-        port: 8081
-        healthEndpoint: /admin/health
+        httpGet:
+          path: /
+          port: http
 
     resources:
       limits:
