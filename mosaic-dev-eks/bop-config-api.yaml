@@ -21,7 +21,7 @@ data:
         memory: 50Mi
         cpu: 50m
  
-    # -- Enable configmap from Helm chart
+    # -- Configmap for Service
     configMap:
       SALESTAXSERVICE: 'net.tcp://1'
       SHARED: shared
