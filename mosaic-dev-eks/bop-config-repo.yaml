@@ -1,0 +1,32 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: bop-config-repo
+  namespace: application
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: application/base/helm-charts
+      version: '4.0.x'
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
+      interval: 1m
+  values:
+    fullnameOverride: bop-config-repo
+    image.tag: 1.16.0
+
+    serviceHealth:
+      readinessProbe:
+        httpGet:
+          path: /
+          port: http
+      livenessProbe:
+        httpGet:
+          path: /
+          port: http
+
+   
+
