@@ -5,8 +5,8 @@ metadata:
     namespace: application
 data:
   values.yaml: |
-    fullnameOverride: bop-config-ui-3
-    image.tag: "latest"
+    fullnameOverride: bop-config-ui
+    image.tag: 1.16.0
 
    
 
