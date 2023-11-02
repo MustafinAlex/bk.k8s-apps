@@ -17,7 +17,7 @@ spec:
   values:
     fullnameOverride: bop-customer-api
     image:
-     tag:131146582a38bb8cb3796fb3725fdc43b75f0821
+      tag: 131146582a38bb8cb3796fb3725fdc43b75f0821
 
     autoscalingPolicy:
       minReplicas: 2
