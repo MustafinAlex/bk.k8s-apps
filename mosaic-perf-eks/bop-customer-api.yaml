@@ -11,15 +11,15 @@ spec:
       version: '4.0.x'
       sourceRef:
         kind: GitRepository
-        name: application-charts
+        name: helm-chart
         namespace: flux-system
       interval: 1m
   values:
     fullnameOverride: bop-customer-api
     image:
-      tag: asdfasdfasdfasdfasdfasdfasdfasdfas
+      tag: 1.16.0
     autoscalingPolicy:
-      minReplicas: 1
+      minReplicas: 2
       maxReplicas: 2
       targetCpuUtilization: 50
 
