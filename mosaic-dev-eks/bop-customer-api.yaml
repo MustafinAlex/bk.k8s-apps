@@ -17,8 +17,7 @@ spec:
   values:
     fullnameOverride: bop-customer-api
     image:
-      tag: 3333
-
+      tag: 1.16.0
     autoscalingPolicy:
       minReplicas: 2
       maxReplicas: 2
