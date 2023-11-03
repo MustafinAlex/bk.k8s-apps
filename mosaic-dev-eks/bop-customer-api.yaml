@@ -11,7 +11,7 @@ spec:
       version: '4.0.x'
       sourceRef:
         kind: GitRepository
-        name: flux-system
+        name: helm-chart
         namespace: flux-system
       interval: 1m
   values:
