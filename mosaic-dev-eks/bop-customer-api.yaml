@@ -19,24 +19,22 @@ spec:
     image:
       tag: 1.16.0
     autoscalingPolicy:
-      minReplicas: 2
+      minReplicas: 1
       maxReplicas: 2
       targetCpuUtilization: 50
 
     serviceHealth:
       readinessProbe:
-        httpGet:
-          path: /
-          port: http
+        Port: 8080
+        HealthEndpoint: /
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
         successThreshold: 1
         timeoutSeconds: 2
       livenessProbe:
-        httpGet:
-          path: /
-          port: http
+        Port: 8080
+        HealthEndpoint: /
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
