@@ -25,16 +25,18 @@ spec:
 
     serviceHealth:
       readinessProbe:
-        path: /
-        port: http
+        httpGet:
+          path: /
+          port: http
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
         successThreshold: 1
         timeoutSeconds: 2
       livenessProbe:
-        path: /
-        port: http
+        httpGet:
+          path: /
+          port: http
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
