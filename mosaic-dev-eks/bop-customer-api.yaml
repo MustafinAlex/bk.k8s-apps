@@ -25,16 +25,16 @@ spec:
 
     serviceHealth:
       readinessProbe:
-        Port: 8080
-        HealthEndpoint: /
+        port: 8080
+        healthEndpoint: /
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
         successThreshold: 1
         timeoutSeconds: 2
       livenessProbe:
-        Port: 8080
-        HealthEndpoint: /
+        port: 8080
+        healthEndpoint: /
         failureThreshold: 3
         initialDelaySeconds: 30
         periodSeconds: 5
