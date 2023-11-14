@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: global-env-configmap
+  name: global-env-variables
   namespace: application
 data:
   aws-account-id: "984210178871"
