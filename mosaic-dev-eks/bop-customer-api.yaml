@@ -15,9 +15,9 @@ spec:
         namespace: flux-system
       interval: 1m
   valuesFrom:
-    - kind: ConfigMap
-      name: global-env-variables
-      valuesKey: aws-account-id
+    - secretKeyRef:
+        name: global-env-variables
+        key: aws-account-id
   values:
     fullnameOverride: bop-customer-api
     image:
