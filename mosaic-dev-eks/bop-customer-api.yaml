@@ -14,10 +14,6 @@ spec:
         name: helm-chart
         namespace: flux-system
       interval: 1m
-  valuesFrom:
-    - secretKeyRef:
-        name: global-env-variables
-        valuesKey: aws-account-id
   values:
     fullnameOverride: bop-customer-api
     image:
@@ -60,3 +56,8 @@ spec:
       SALESTAXSERVICE: 'net.tcp://88888888888888'
       SHARED: shared
       APPLICATION__ENVIRONMENT: devqa
+
+  valuesFrom:
+    - secretKeyRef:
+        name: global-env-variables
+        key: aws-account-id
