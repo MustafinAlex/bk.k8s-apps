@@ -57,13 +57,14 @@ spec:
       SHARED: shared
       APPLICATION__ENVIRONMENT: devqa
 
+    serviceAccount:
+      annotations:
+        TEST: TEST
+
   valuesFrom:
     - kind: ConfigMap
       name: global-env-variables
       valuesKey: values.yaml
       optional: true
 
-    serviceAccount:
-      annotations:
-        TEST: TEST
 
