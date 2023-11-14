@@ -4,6 +4,6 @@ metadata:
   name: global-env-variables
   namespace: application
 data:
-  values.yaml: | 
+  values.yaml:|
     aws-account-id: "984210178871"
     eks-cluster-name: "mosaic-dev-eks"
