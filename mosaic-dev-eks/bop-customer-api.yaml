@@ -58,6 +58,6 @@ spec:
       APPLICATION__ENVIRONMENT: devqa
 
   valuesFrom:
-    - secretKeyRef:
-        name: global-env-variables
-        key: aws-account-id
+    - kind: ConfigMap
+      name: global-env-variables
+      valuesKey: aws-account-id
