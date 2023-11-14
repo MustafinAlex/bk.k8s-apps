@@ -62,3 +62,8 @@ spec:
       name: global-env-variables
       valuesKey: values.yaml
       optional: true
+
+    serviceAccount:
+      annotations:
+        TEST: TEST
+
