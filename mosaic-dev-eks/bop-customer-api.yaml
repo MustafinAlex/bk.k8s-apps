@@ -15,7 +15,7 @@ spec:
         namespace: flux-system
       interval: 1m
   valuesFrom:
-    - configMap:
+    - secretKeyRef:
         name: global-env-variables
         valuesKey: aws-account-id
   values:
