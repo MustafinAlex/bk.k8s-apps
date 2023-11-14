@@ -25,7 +25,7 @@ spec:
 
   valuesFrom:
     - kind: ConfigMap
-      name: global-env-variables
+      name: my-configmap
       valuesKey: values.yaml
       optional: true
 
