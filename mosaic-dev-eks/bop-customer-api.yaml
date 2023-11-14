@@ -14,6 +14,12 @@ spec:
         name: helm-chart
         namespace: flux-system
       interval: 1m
+  valuesFrom:
+    - kind: ConfigMap
+      name: global-env-variables
+      valuesKey: values.yaml
+      optional: true
+
   values:
     fullnameOverride: bop-customer-api
     image:
@@ -56,15 +62,5 @@ spec:
       SALESTAXSERVICE: 'net.tcp://88888888888888'
       SHARED: shared
       APPLICATION__ENVIRONMENT: devqa
-
-    serviceAccount:
-      annotations:
-        TEST: TEST
-
-  valuesFrom:
-    - kind: ConfigMap
-      name: global-env-variables
-      valuesKey: values.yaml
-      optional: true
 
 
