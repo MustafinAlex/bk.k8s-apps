@@ -4,5 +4,5 @@ metadata:
   name: global-env-configmap
   namespace: application
 data:
-  aws-account-id: 984210178871
-  eks-cluster-name: mosaic-dev-eks
+  aws-account-id: "984210178871"
+  eks-cluster-name: "mosaic-dev-eks"
