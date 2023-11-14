@@ -18,7 +18,6 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: my-configmap
-      valuesKey: values.yaml
       optional: true
 
   values:
