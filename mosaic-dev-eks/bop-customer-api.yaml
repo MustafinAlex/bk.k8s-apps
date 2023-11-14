@@ -60,4 +60,5 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: global-env-variables
-      valuesKey: aws-account-id
+      valuesKey: values.yaml
+      optional: true
