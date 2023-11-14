@@ -14,10 +14,9 @@ spec:
         name: helm-chart
         namespace: flux-system
       interval: 1m
-
   valuesFrom:
     - kind: ConfigMap
-      name: my-configmap
+      name: global-env-variables
       optional: true
 
   values:
