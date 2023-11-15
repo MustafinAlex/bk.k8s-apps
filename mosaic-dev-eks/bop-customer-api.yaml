@@ -48,6 +48,12 @@ spec:
         successThreshold: 1
         timeoutSeconds: 2
 
+    serviceAccount:
+      addIamRole: true
+      annotations:
+        TEST: TEST
+
+
     resources:
       limits:
         memory: 128Mi
