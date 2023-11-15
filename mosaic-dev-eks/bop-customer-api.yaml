@@ -50,9 +50,9 @@ spec:
 
     serviceAccount:
       addIamRole: true
-      annotations:
-        TEST: TEST
-        TEST2: TEST2
+#      annotations:
+#        TEST: TEST
+#        TEST2: TEST2
 
 
     resources:
