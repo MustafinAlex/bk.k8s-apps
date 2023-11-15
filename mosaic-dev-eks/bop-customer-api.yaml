@@ -49,6 +49,7 @@ spec:
         timeoutSeconds: 2
 
     serviceAccount:
+      addIamRole: true
       annotations:
         TEST: TEST
 
