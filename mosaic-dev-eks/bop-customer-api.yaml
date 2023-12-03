@@ -38,7 +38,7 @@ spec:
     serviceHealth:
       readinessProbe:
         httpGet:
-          path: /qwe
+          path: /
           port: 80
         failureThreshold: 3
         initialDelaySeconds: 15
@@ -47,7 +47,7 @@ spec:
         timeoutSeconds: 2
       livenessProbe:
         httpGet:
-          path: /qwe
+          path: /
           port: 80
         failureThreshold: 3
         initialDelaySeconds: 15
