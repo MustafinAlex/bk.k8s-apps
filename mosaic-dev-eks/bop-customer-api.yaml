@@ -29,7 +29,7 @@ spec:
   values:
     fullnameOverride: bop-customer-api
     image:
-      repository: nginx3333
+      repository: nginx
     autoscalingPolicy:
       minReplicas: 1
       maxReplicas: 2
