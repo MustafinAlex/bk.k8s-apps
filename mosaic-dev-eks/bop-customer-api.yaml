@@ -55,11 +55,11 @@ spec:
         successThreshold: 1
         timeoutSeconds: 2
 
-#    serviceAccount:
-#      addIamRole: true
-#      annotations:
-#        TEST: TEST
-#        TEST2: TEST2
+    serviceAccount:
+      addIamRole: true
+      annotations:
+        TEST: TEST
+        TEST2: TEST2
 
 
     resources:
