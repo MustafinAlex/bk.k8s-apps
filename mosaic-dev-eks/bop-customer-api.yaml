@@ -18,7 +18,14 @@ spec:
     - kind: ConfigMap
       name: global-env-variables
       optional: true
-
+  install:
+    remediation:
+      retries: 1
+  upgrade:
+    timeout: 100s
+    remediation:
+      retries: 1
+      strategy: rollback
   values:
     fullnameOverride: bop-customer-api
     image:
